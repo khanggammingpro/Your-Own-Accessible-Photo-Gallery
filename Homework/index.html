@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body onload="addTabFocus()">
+  <main>
+    <h1>Springtime in Michigan: Photo Gallery</h1>
+
+    <p>Hover over a photo, or tab to it with your keyboard, to see it enlarged.</p>
+
+    <div id="image" aria-live="polite" style="background-image: url('')"><span class="caption">Hover over an image below to display here.</span></div>
+
+    <div class="gallery">
+      <img class="preview" src="images/tulips.jpg" alt="Bright red tulips in front of a garden light"
+        onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="images/red_maple.jpg" alt="A small Japanese maple tree in front of a purple door"
+        onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="images/falling_petals.jpg" alt="A magnolia tree shedding its petals onto the grass"
+        onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="images/bacon_in_the_woods.jpg" alt="Bacon the labradoodle sitting near a stream in the woods"
+        onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="images/huron_river_cascades.jpg" alt="Two people in a kayak approaching small rapids on the Huron River"
+        onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="images/mist_over_huron_river.jpg" alt="Morning mist rising over the Huron River"
+        onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    </div>
+  </main>
+</body>
+
+</html>

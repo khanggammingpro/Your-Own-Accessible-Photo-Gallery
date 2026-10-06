@@ -1,0 +1,64 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f3e8;
+  margin: 0;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+}
+
+h1 {
+  color: #2f6b3a;
+}
+
+#image {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 4px solid #2f6b3a;
+  border-radius: 14px;
+  background-color: #dfe9d9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* dark caption box keeps text readable over any photo */
+.caption {
+  background: #000;
+  color: #fff;
+  padding: 0.4em 0.8em;
+  border-radius: 8px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.preview {
+  width: 130px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #2f6b3a;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.preview:hover,
+.preview:focus {
+  outline: 3px solid #d6457f;
+}
